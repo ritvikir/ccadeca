@@ -39,7 +39,7 @@ export default function Example() {
                     src="https://wadeca.org/wp-content/uploads/2019/09/DECA-Diamond-1.png"
                     alt="Your Company"
                   />
-                  <span className="text-blue-500 font-semibold rounded-md px-3 py-2 text-sm">
+                  <span className="text-blue-500 font-semibold rounded-md px-3 py-2 text-base">
                     CCA DECA
                   </span>
                 </div>
@@ -51,7 +51,7 @@ export default function Example() {
                         href={item.href}
                         className={classNames(
                           "text-gray-500 ",
-                          "rounded-md px-3 py-2 text-sm font-medium"
+                          "rounded-md px-3 py-2 text-base font-medium"
                         )}
                         aria-current={item.current ? "page" : undefined}
                       >
@@ -64,7 +64,7 @@ export default function Example() {
               <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
                 <button
                   type="button"
-                  className=" rounded-md px-4  py-1.5 text-sm bg-blue-500 p-1 text-white "
+                  className=" rounded-md px-4  py-1.5 text-base bg-blue-500 p-1 text-white "
                 >
                   Sign Up
                 </button>
@@ -83,7 +83,7 @@ export default function Example() {
                   href={item.href}
                   className={classNames(
                     "text-gray-500",
-                    "block rounded-md px-3 py-2 text-sm font-medium"
+                    "block rounded-md px-3 py-2 text-base font-medium"
                   )}
                   aria-current={item.current ? "page" : undefined}
                 >
