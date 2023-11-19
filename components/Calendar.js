@@ -63,7 +63,6 @@ export default function CalendarComponent() {
           defaultDate={new Date()}
           selectable={true}
           eventPropGetter={eventStyleGetter}
-          style={{ height: "60vh" }} // Adjust the height as needed
         />
       </div>
     </div>
