@@ -30,7 +30,8 @@ export default function About() {
         <div className="pb-8 pt-6 bg-white">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             {/* Finance */}
-            <div className="flex p-4 border rounded-lg shadow-lg bg-white">
+            {/* redirect to https://www.deca.org/career-clusters/finance on click */}
+            <div className="flex p-4 border rounded-lg shadow-lg bg-white cursor-pointer" onClick={() => window.open("https://www.deca.org/career-clusters/finance", "_blank")}>
               <div>
                 <h2 className="font-bold text-lg mb-2 text-green-600">
                   Finance
@@ -44,7 +45,7 @@ export default function About() {
             </div>
 
             {/* Hospitality and Tourism */}
-            <div className="flex p-4 border rounded-lg shadow-lg bg-white">
+            <div className="flex p-4 border rounded-lg shadow-lg bg-white cursor-pointer" onClick={() => window.open("https://www.deca.org/career-clusters/hospitality-and-tourism", "_blank")}>
               <div>
                 <h2 className="font-bold text-lg mb-2 text-blue-600">
                   Hospitality & Tourism
@@ -58,7 +59,7 @@ export default function About() {
             </div>
 
             {/* Marketing */}
-            <div className="flex p-4 border rounded-lg shadow-lg bg-white">
+            <div className="flex p-4 border rounded-lg shadow-lg bg-white cursor-pointer" onClick={() => window.open("https://www.deca.org/career-clusters/marketing", "_blank")}>
               <div>
                 <h2 className="font-bold text-lg mb-2 text-red-600">
                   Marketing
@@ -72,7 +73,7 @@ export default function About() {
             </div>
 
             {/* Personal Financial Literacy */}
-            <div className="flex p-4 border rounded-lg shadow-lg bg-white">
+            <div className="flex p-4 border rounded-lg shadow-lg bg-white cursor-pointer" onClick={() => window.open("https://www.deca.org/career-clusters/personal-financial-literacy", "_blank")}>
               <div>
                 <h2 className="font-bold text-lg mb-2 text-lime-600">
                   Personal Financial Literacy
@@ -85,7 +86,7 @@ export default function About() {
             </div>
 
             {/* Business Management and Administration */}
-            <div className="flex p-4 border rounded-lg shadow-lg bg-white">
+            <div className="flex p-4 border rounded-lg shadow-lg bg-white cursor-pointer" onClick={() => window.open("https://www.deca.org/career-clusters/business-management-administration", "_blank")}>
               <div>
                 <h2 className="font-bold text-lg mb-2 text-yellow-600">
                   Business Management & Administration
@@ -98,7 +99,7 @@ export default function About() {
             </div>
 
             {/* Entrepreneurship */}
-            <div className="flex p-4 border rounded-lg shadow-lg bg-white">
+            <div className="flex p-4 border rounded-lg shadow-lg bg-white cursor-pointer" onClick={() => window.open("https://www.deca.org/career-clusters/finance", "_blank")}>
               <div>
                 <h2 className="font-bold text-lg mb-2 text-gray-600">
                   Entrepreneurship
