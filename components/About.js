@@ -21,10 +21,13 @@ export default function About() {
               entrepreneurial spirit, forge connections with a dynamic network
               of peers, and leap into a transformative educational experience.
             </p>
+            <p className="text-xl mt-4 text-gray-700">
+              Here are some clusters to choose from:
+            </p>
           </div>
         </div>
 
-        <div className="py-8 bg-white">
+        <div className="pb-8 pt-6 bg-white">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             {/* Finance */}
             <div className="flex p-4 border rounded-lg shadow-lg bg-white">
@@ -117,6 +120,81 @@ export default function About() {
             >
               Learn more here <span aria-hidden="true">→</span>
             </a>
+          </div>
+        </div>
+
+        <div className="pt-10 lg:flex lg:items-start lg:justify-between">
+          {/* Text Section */}
+          <div className="lg:w-1/2">
+            <h1 className="text-4xl font-bold mb-4 text-blue-500">Why DECA?</h1>
+            <p className="text-lg text-gray-500">
+              DECA is more than just an extracurricular—it's a global movement
+              that prepares students to become leaders in a dynamic world of
+              business and entrepreneurship. Here’s why you should join:
+            </p>
+            <ul className="mt-6 list-disc list-inside text-gray-500 space-y-2">
+              <li>
+                <strong>Leadership Development:</strong> Hone your leadership
+                skills through real-world challenges and executive roles.
+              </li>
+              <li>
+                <strong>Career Preparation:</strong> Gain insights into various
+                business industries with hands-on experiences that go beyond the
+                classroom.
+              </li>
+              <li>
+                <strong>Networking Opportunities:</strong> Connect with
+                like-minded peers and industry professionals who can help you
+                along your career path.
+              </li>
+              <li>
+                <strong>Competitive Edge:</strong> Participate in competitive
+                events that build confidence and impressive credentials for
+                college and job applications.
+              </li>
+              <li>
+                <strong>Entrepreneurial Spirit:</strong> Ignite your innovative
+                ideas and learn how to turn them into successful business
+                ventures.
+              </li>
+              <li>
+                <strong>Travel Opportunities:</strong> Explore new destinations
+                and cultures through DECA's exclusive conferences and
+                competitions held around the globe.
+              </li>
+              <li>
+                <strong>Community Impact:</strong> Make a difference through
+                community service initiatives and impact projects that DECA
+                organizes.
+              </li>
+            </ul>
+          </div>
+
+          {/* Images Section */}
+          <div className="lg:w-1/2 lg:pl-4 mt-8 lg:mt-0">
+            {/* Placeholder for images - Replace 'src' with your image paths */}
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <img
+                src="/image1.jpeg"
+                alt="Image description"
+                className="rounded-lg shadow-lg"
+              />
+              <img
+                src="/image2.jpeg"
+                alt="Image description"
+                className="rounded-lg shadow-lg"
+              />
+              <img
+                src="/image3.jpeg"
+                alt="Image description"
+                className="rounded-lg shadow-lg"
+              />
+              <img
+                src="/image4.jpeg"
+                alt="Image description"
+                className="rounded-lg shadow-lg"
+              />
+            </div>
           </div>
         </div>
       </div>

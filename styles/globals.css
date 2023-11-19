@@ -5,3 +5,28 @@
 html {
   scroll-behavior: smooth;
 }
+
+
+#Calendar {
+  margin-top:50px;
+  margin-bottom: 50px;
+}
+
+.rbc-month-view{
+  flex-basis: 500px !important;
+}
+
+.rbc-toolbar-label {
+  font-weight: bold;
+  font-size: 22px;
+  color: #3b82f6;
+}
+
+.rbc-date-cell {
+  color: rgb(57, 56, 56);
+}
+
+.rbc-today {
+  background-color: #e0f2fe !important;
+}
+
