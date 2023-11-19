@@ -31,7 +31,7 @@ export default function Home() {
         />
         <meta
           property="og:image"
-          content="https://wadeca.org/wp-content/uploads/2019/09/DECA-Diamond-1.png"
+          content="/DECA-Diamond-1.png"
         />
       </Head>
 

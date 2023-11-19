@@ -175,25 +175,38 @@ export default function About() {
           <div className="lg:w-1/2 lg:pl-4 mt-8 lg:mt-0">
             {/* Placeholder for images - Replace 'src' with your image paths */}
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-              <img
+              <Image
                 src="/image1.jpeg"
                 alt="Image description"
                 className="rounded-lg shadow-lg"
-              />
-              <img
+                width={500}
+                height={500}
+                />
+              <Image
                 src="/image2.jpeg"
                 alt="Image description"
                 className="rounded-lg shadow-lg"
+                width={500}
+                height={500}
+
               />
-              <img
+              <Image
                 src="/image3.jpeg"
                 alt="Image description"
                 className="rounded-lg shadow-lg"
+                width={500}
+                height={500}
+
+
               />
-              <img
+              <Image
                 src="/image4.jpeg"
                 alt="Image description"
                 className="rounded-lg shadow-lg"
+                width={500}
+                height={500}
+
+
               />
             </div>
           </div>

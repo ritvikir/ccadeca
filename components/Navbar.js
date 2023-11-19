@@ -2,6 +2,7 @@ import { Fragment } from "react";
 import { Disclosure, Menu, Transition } from "@headlessui/react";
 import { Bars3Icon, BellIcon, XMarkIcon } from "@heroicons/react/24/outline";
 import Link from "next/link";
+import Image from "next/image"
 
 const navigation = [
   // { name: "Dashboard", href: "#", current: true },
@@ -35,10 +36,12 @@ export default function Example() {
               </div>
               <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
                 <div className="flex flex-shrink-0 items-center">
-                  <img
+                  <Image
                     className="h-8 w-auto"
-                    src="https://wadeca.org/wp-content/uploads/2019/09/DECA-Diamond-1.png"
+                    src="/DECA-Diamond-1.png"
                     alt="Your Company"
+                    width={500}
+                    height={500}
                   />
                   <span className="text-blue-500 font-semibold rounded-md px-3 py-2 text-base">
                     CCA DECA

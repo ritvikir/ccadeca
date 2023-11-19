@@ -1,10 +1,12 @@
 import React from 'react';
+import Image from 'next/legacy/image'; // Import from 'next/image'
 
 const officers = [
   { name: 'Ruby Gao', position: 'President', imageUrl: '/ruby.jpeg' },
   { name: 'Lynn Huang', position: 'Vice President', imageUrl: '/lynn.png' },
   { name: 'Sydney Danon', position: 'Secretary', imageUrl: '/sydney.png' },
   { name: 'Ritvik Irigireddy', position: 'Treasurer', imageUrl: '/ritvik.jpeg' },
+  // ... add more officers as needed
 ];
 
 export default function MeetYourOfficers() {
@@ -16,16 +18,21 @@ export default function MeetYourOfficers() {
       <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-6">
         {officers.map((officer, index) => (
           <div key={index} className="text-center">
-            <img
-              src={officer.imageUrl}
-              alt={`Image of ${officer.name}`}
-              className="rounded-full w-40 h-40 mx-auto object-cover mb-4"
-            />
+            <div className="relative inline-block w-40 h-40 mx-auto mb-4">
+              <Image
+                src={officer.imageUrl}
+                alt={`Image of ${officer.name}`}
+                layout="fill"
+                objectFit="cover" // This will cover the area of the div, you can also use 'contain' if you don't want to crop the image
+                className="rounded-full"
+              />
+            </div>
             <h2 className="text-xl font-semibold">{officer.name}</h2>
             <p className="text-md text-gray-600">{officer.position}</p>
           </div>
         ))}
       </div>
     </div>
+
   );
 }
