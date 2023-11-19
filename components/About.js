@@ -128,7 +128,7 @@ export default function About() {
           <div className="lg:w-1/2">
             <h1 className="text-4xl font-bold mb-4 text-blue-500">Why DECA?</h1>
             <p className="text-lg text-gray-500">
-              DECA is more than just an extracurricular—it's a global movement
+              DECA is more than just an extracurricular—it&apos;s a global movement
               that prepares students to become leaders in a dynamic world of
               business and entrepreneurship. Here’s why you should join:
             </p>
@@ -159,7 +159,7 @@ export default function About() {
               </li>
               <li>
                 <strong>Travel Opportunities:</strong> Explore new destinations
-                and cultures through DECA's exclusive conferences and
+                and cultures through DECA&apos;s exclusive conferences and
                 competitions held around the globe.
               </li>
               <li>
