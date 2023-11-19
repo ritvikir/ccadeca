@@ -1,6 +1,7 @@
 import { Fragment } from "react";
 import { Disclosure, Menu, Transition } from "@headlessui/react";
 import { Bars3Icon, BellIcon, XMarkIcon } from "@heroicons/react/24/outline";
+import Link from "next/link";
 
 const navigation = [
   { name: "Dashboard", href: "#", current: true },
@@ -62,12 +63,14 @@ export default function Example() {
                 </div>
               </div>
               <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
-                <button
-                  type="button"
-                  className=" rounded-md px-4  py-1.5 text-base bg-blue-500 p-1 text-white "
-                >
-                  Sign Up
-                </button>
+                <Link href="https://docs.google.com/forms/d/e/1FAIpQLScOLfkmFsTZop_cca565deD4huYJtvuWMTzla1VEDlknbZl-w/viewform?vc=0&c=0&w=1&flr=0">
+                  <button
+                    type="button"
+                    className="rounded-md bg-gradient-to-r from-sky-500 to-sky-400 hover:from-sky-400 hover:to-sky-300  px-3.5 py-1.5 text-base font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                 >
+                    Sign Up
+                  </button>
+                </Link>
 
                 {/* Profile dropdown */}
               </div>
