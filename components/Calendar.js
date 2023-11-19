@@ -52,7 +52,7 @@ export default function CalendarComponent() {
 
   return (
     <div id="Calendar">
-      <div className="mx-auto max-w-7xl px-2">
+      <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8 pb-10">
         <h1 className="text-4xl font-bold mb-4 text-blue-500">Calendar</h1>
         <Calendar
           localizer={localizer}
