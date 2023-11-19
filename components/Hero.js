@@ -15,7 +15,7 @@ export default function Hero() {
             >
               <polygon points="0,0 90,0 50,100 0,100" />
             </svg>
-            <div className="relative px-6 pt-40 pb-20 lg:px-8 lg:pr-0">
+            <div className="relative px-6 lg:pt-40 pb-20 lg:px-8 lg:pr-0">
               <div className="mx-auto max-w-2xl lg:mx-0 lg:max-w-xl">
                 <h1 className="text-4xl font-bold tracking-tight text-slate-900 sm:text-6xl">
                   CCA DECA
@@ -44,7 +44,7 @@ export default function Hero() {
             </div>
           </div>
         </div>
-        <div className="bg-gray-50 lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2 flex justify-center lg:justify-start">
+        <div className="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2 flex justify-center lg:justify-start">
           <Image
             className="object-cover lg:aspect-auto lg:h-full lg:w-full"
             src="/IMG_3374.jpeg"
