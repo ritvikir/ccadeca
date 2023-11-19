@@ -23,11 +23,11 @@ export default function Home() {
         />
         <meta
           property="og:title"
-          content="DECA: Empowering Emerging Leaders and Entrepreneurs"
+          content="CCA DECA: Empowering Emerging Leaders and Entrepreneurs"
         />
         <meta
           property="og:description"
-          content="DECA prepares the next generation of leaders and innovators, offering students unique opportunities to grow through competitions, conferences, and networking."
+          content="CCA DECA prepares the next generation of leaders and innovators, offering students unique opportunities to grow through competitions, conferences, and networking."
         />
         <meta
           property="og:image"
