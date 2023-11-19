@@ -9,7 +9,7 @@ const officers = [
 
 export default function MeetYourOfficers() {
   return (
-    <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8 pb-10">
+    <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8 pb-10 mb-12">
       <h1 className="text-4xl font-bold mb-10 text-blue-500">
         Meet Your Officers
       </h1>
