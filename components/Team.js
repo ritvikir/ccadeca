@@ -2,6 +2,7 @@ import React from 'react';
 import Image from 'next/legacy/image'; // Import from 'next/image'
 
 const officers = [
+  { name: 'Nathan Dai', position: 'Director of Corporate Synergy and Strategic Alignment', imageUrl: '/wayne.jpeg' },
   { name: 'Ruby Gao', position: 'President', imageUrl: '/ruby.jpeg' },
   { name: 'Lynn Huang', position: 'Vice President', imageUrl: '/lynn.png' },
   { name: 'Sydney Danon', position: 'Secretary', imageUrl: '/sydney.png' },
@@ -15,9 +16,9 @@ export default function MeetYourOfficers() {
       <h1 className="text-4xl font-bold mb-10 text-blue-500">
         Meet Your Officers
       </h1>
-      <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+      <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-5 gap-6">
         {officers.map((officer, index) => (
-          <div key={index} className="text-center">
+          <div key={index} className={'p-2 text-center ' + (officer.name === 'Nathan Dai' ? 'shadow-2xl' : '')} >
             <div className="relative inline-block w-40 h-40 mx-auto mb-4">
               <Image
                 src={officer.imageUrl}
