@@ -2,6 +2,27 @@ import Link from "next/link";
 import Image from "next/image";
 
 export default function About() {
+  // const hover_effect = () => {
+  //   let btn = document.querySelector('.info-card');
+  //   btn.addEventListener('mousemove', (e) => {
+  //     let rect = e.target.getBoundingClientRect();
+  //     let x = e.clientX - rect.left;
+  //     let y = e.clientY - rect.top;
+
+  //     btn.style.setProperty('--x', `${ x }px`);
+  //     btn.style.setProperty('--y', `${ y }px`);
+  //   })
+  // }
+
+  const handle_mouse_move = (e) => {
+    let rect = e.target.getBoundingClientRect();
+    let x = e.clientX - rect.left;
+    let y = e.clientY - rect.top;
+
+    e.target.style.setProperty('--x', `${ x }px`);
+    e.target.style.setProperty('--y', `${ y }px`);
+  }
+
   return (
     <div>
       <div id="about" className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8 pb-10">
@@ -30,8 +51,7 @@ export default function About() {
         <div className="pb-8 pt-6 bg-white">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             {/* Finance */}
-            {/* redirect to https://www.deca.org/career-clusters/finance on click */}
-            <div className="flex p-4 border rounded-lg shadow-lg bg-white cursor-pointer" onClick={() => window.open("https://www.deca.org/career-clusters/finance", "_blank")}>
+            <div className="info-card flex p-4 border rounded-lg shadow-lg bg-white cursor-pointer" onClick={() => window.open("https://www.deca.org/career-clusters/finance", "_blank")} onMouseMove={handle_mouse_move}>
               <div>
                 <h2 className="font-bold text-lg mb-2 text-green-600">
                   Finance
@@ -45,7 +65,7 @@ export default function About() {
             </div>
 
             {/* Hospitality and Tourism */}
-            <div className="flex p-4 border rounded-lg shadow-lg bg-white cursor-pointer" onClick={() => window.open("https://www.deca.org/career-clusters/hospitality-and-tourism", "_blank")}>
+            <div className="info-card flex p-4 border rounded-lg shadow-lg bg-white cursor-pointer" onClick={() => window.open("https://www.deca.org/career-clusters/hospitality-and-tourism", "_blank")} onMouseMove={handle_mouse_move}>
               <div>
                 <h2 className="font-bold text-lg mb-2 text-blue-600">
                   Hospitality & Tourism
@@ -59,7 +79,7 @@ export default function About() {
             </div>
 
             {/* Marketing */}
-            <div className="flex p-4 border rounded-lg shadow-lg bg-white cursor-pointer" onClick={() => window.open("https://www.deca.org/career-clusters/marketing", "_blank")}>
+            <div className="info-card flex p-4 border rounded-lg shadow-lg bg-white cursor-pointer" onClick={() => window.open("https://www.deca.org/career-clusters/marketing", "_blank")} onMouseMove={handle_mouse_move}>
               <div>
                 <h2 className="font-bold text-lg mb-2 text-red-600">
                   Marketing
@@ -73,7 +93,7 @@ export default function About() {
             </div>
 
             {/* Personal Financial Literacy */}
-            <div className="flex p-4 border rounded-lg shadow-lg bg-white cursor-pointer" onClick={() => window.open("https://www.deca.org/career-clusters/personal-financial-literacy", "_blank")}>
+            <div className="info-card flex p-4 border rounded-lg shadow-lg bg-white cursor-pointer" onClick={() => window.open("https://www.deca.org/career-clusters/personal-financial-literacy", "_blank")} onMouseMove={handle_mouse_move}>
               <div>
                 <h2 className="font-bold text-lg mb-2 text-lime-600">
                   Personal Financial Literacy
@@ -86,7 +106,7 @@ export default function About() {
             </div>
 
             {/* Business Management and Administration */}
-            <div className="flex p-4 border rounded-lg shadow-lg bg-white cursor-pointer" onClick={() => window.open("https://www.deca.org/career-clusters/business-management-administration", "_blank")}>
+            <div className="info-card flex p-4 border rounded-lg shadow-lg bg-white cursor-pointer" onClick={() => window.open("https://www.deca.org/career-clusters/business-management-administration", "_blank")} onMouseMove={handle_mouse_move}>
               <div>
                 <h2 className="font-bold text-lg mb-2 text-yellow-600">
                   Business Management & Administration
@@ -99,7 +119,7 @@ export default function About() {
             </div>
 
             {/* Entrepreneurship */}
-            <div className="flex p-4 border rounded-lg shadow-lg bg-white cursor-pointer" onClick={() => window.open("https://www.deca.org/career-clusters/finance", "_blank")}>
+            <div className="info-card flex p-4 border rounded-lg shadow-lg bg-white cursor-pointer" onClick={() => window.open("https://www.deca.org/career-clusters/finance", "_blank")} onMouseMove={handle_mouse_move}>
               <div>
                 <h2 className="font-bold text-lg mb-2 text-gray-600">
                   Entrepreneurship
