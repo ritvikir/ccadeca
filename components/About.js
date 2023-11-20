@@ -2,18 +2,6 @@ import Link from "next/link";
 import Image from "next/image";
 
 export default function About() {
-  // const hover_effect = () => {
-  //   let btn = document.querySelector('.info-card');
-  //   btn.addEventListener('mousemove', (e) => {
-  //     let rect = e.target.getBoundingClientRect();
-  //     let x = e.clientX - rect.left;
-  //     let y = e.clientY - rect.top;
-
-  //     btn.style.setProperty('--x', `${ x }px`);
-  //     btn.style.setProperty('--y', `${ y }px`);
-  //   })
-  // }
-
   const handle_mouse_move = (e) => {
     let rect = e.target.getBoundingClientRect();
     let x = e.clientX - rect.left;

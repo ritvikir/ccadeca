@@ -30,3 +30,40 @@ html {
   background-color: #e0f2fe !important;
 }
 
+/* info cards */
+
+.info-card {
+  position: relative;
+  background: #fafafa;
+  padding: 0.5rem 1rem;
+  font-size: 1.2rem;
+  border: none;
+  color: white;
+  cursor: pointer;
+  outline: none;
+  overflow: hidden;
+}
+
+.info-card::before {
+  --size: 0;
+  content: '';
+  position: absolute;
+  left: var(--x);
+  top: var(--y);
+  width: var(--size);
+  height: var(--size);
+  background: radial-gradient(circle closest-side, rgba(0, 122, 255, 0.05), transparent);
+  transform: translate(-50%, -50%);
+  transition: width 0.5s ease, height 0.5s ease;
+}
+
+.info-card:hover::before {
+  --size: 50vh;
+}
+
+.info-card:hover {
+  transform: scale(1.02);
+  transition: transform 0.3s ease;
+
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+}

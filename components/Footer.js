@@ -8,7 +8,7 @@ export default function Footer() {
         <div className="flex justify-between items-center">
           <div className="flex items-center">
             <a href="/privacy-policy" className="text-gray-400 hover:underline">
-              Site built by Ritvik Irigireddy
+              Site built by Ritvik Irigireddy (&quot;Treasurer&quot;) and Nathan Dai (&quot;Director of Corporate Synergy and Strategic Alignment&quot;)
             </a>
           </div>
 
