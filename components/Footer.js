@@ -7,9 +7,9 @@ export default function Footer() {
       <footer className="bg-white border-t border-gray-200 py-4">
         <div className="flex justify-between items-center">
           <div className="flex items-center">
-            <a href="/privacy-policy" className="text-gray-400 hover:underline">
+            <p className="text-gray-400 cursor-default">
               Site built by Ritvik Irigireddy (&quot;Treasurer&quot;) and Nathan Dai (&quot;Director of Corporate Synergy and Strategic Alignment&quot;)
-            </a>
+            </p>
           </div>
 
           {/* Social Media Icons */}

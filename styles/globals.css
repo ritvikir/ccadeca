@@ -52,7 +52,7 @@ html {
   top: var(--y);
   width: var(--size);
   height: var(--size);
-  background: radial-gradient(circle closest-side, rgba(0, 122, 255, 0.05), transparent);
+  background: radial-gradient(circle closest-side, rgba(0, 122, 255, 0.03), transparent);
   transform: translate(-50%, -50%);
   transition: width 0.5s ease, height 0.5s ease;
 }
