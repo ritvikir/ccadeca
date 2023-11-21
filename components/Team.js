@@ -2,11 +2,12 @@ import React from 'react';
 import Image from 'next/legacy/image'; // Import from 'next/image'
 
 const officers = [
-  { name: 'Ritvik Irigireddy', position: 'Treasurer', imageUrl: '/ritvik.jpeg' },
-  { name: 'Nathan Dai', position: 'Director of Corporate Synergy and Strategic Alignment', imageUrl: '/wayne.jpeg' },
   { name: 'Ruby Gao', position: 'President', imageUrl: '/ruby.jpeg' },
   { name: 'Lynn Huang', position: 'Vice President', imageUrl: '/lynn.png' },
   { name: 'Sydney Danon', position: 'Secretary', imageUrl: '/sydney.png' },
+  { name: 'Ritvik Irigireddy', position: 'Treasurer', imageUrl: '/ritvik.jpeg' },
+  { name: 'Nathan Dai', position: 'Director of Corporate Synergy and Strategic Alignment', imageUrl: '/wayne.jpeg' },
+
   // ... add more officers as needed
 ];
 
@@ -18,7 +19,7 @@ export default function MeetYourOfficers() {
       </h1>
       <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-5 gap-6">
         {officers.map((officer, index) => (
-          <div key={index} className={'officer-info p-4 text-center ' + ((officer.name === 'Nathan Dai' || officer.name === 'Ritvik Irigireddy') ? 'rounded-lg bg-gradient-to-br from-slate-50 to-slate-300 shadow-2xl ring-1 ring-blue-500/50 hover:ring-blue-500' : '')} id={officer.name.split(' ')[0].toLowerCase()} >
+          <div key={index} className={'officer-info p-4 text-center'} id={officer.name.split(' ')[0].toLowerCase()} >
             <div className="relative inline-block w-40 h-40 mx-auto mb-4">
               <Image
                 src={officer.imageUrl}

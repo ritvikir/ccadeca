@@ -8,7 +8,7 @@ export default function Footer() {
         <div className="flex justify-between items-center">
           <div className="flex items-center">
             <p className="text-gray-400 cursor-default">
-              Site built by Ritvik Irigireddy (&quot;Treasurer&quot;) and Nathan Dai (&quot;Director of Corporate Synergy and Strategic Alignment&quot;)
+              Site built by Ritvik Irigireddy and Nathan Dai
             </p>
           </div>
 
