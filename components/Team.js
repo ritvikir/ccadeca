@@ -2,7 +2,7 @@ import React from 'react';
 import Image from 'next/legacy/image'; // Import from 'next/image'
 
 const officers = [
-  { name: 'Ruby Gao', position: 'President', imageUrl: '/ruby.jpeg' },
+  { name: 'Ruby Gao', position: 'President', imageUrl: '/ruby_beautify.jpg' },
   { name: 'Lynn Huang', position: 'Vice President', imageUrl: '/lynn.png' },
   { name: 'Sydney Danon', position: 'Secretary', imageUrl: '/sydney.png' },
   { name: 'Ritvik Irigireddy', position: 'Treasurer', imageUrl: '/ritvik.jpeg' },
