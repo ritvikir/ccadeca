@@ -23,7 +23,7 @@ export default function MeetYourOfficers() {
 				{officers.map((officer, index) => (
 					<div
 						key={index}
-						className={'officer-info p-4 text-center'}
+						className={'officer-info p-4 text-center' + ((officer.name === 'Nathan Dai') ? ' rounded-lg bg-gradient-to-br from-slate-50 to-slate-300 shadow-2xl ring-1 ring-blue-500/50 hover:ring-blue-500' : '')}
 						id={officer.name.split(' ')[0].toLowerCase()}
 					>
 						<div className='relative inline-block w-40 h-40 mx-auto mb-4'>
