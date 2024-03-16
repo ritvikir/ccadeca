@@ -1,47 +1,51 @@
-import Image from "next/image";
-import Navbar from "../components/Navbar";
-import Hero from "@/components/Hero";
-import About from "@/components/About";
-import { Inter } from "next/font/google";
-import Head from "next/head";
-import Calendar from "@/components/Calendar";
-import Team from "@/components/Team";
-import Faq from "@/components/Faq";
-import Footer from "@/components/Footer";
+import Image from 'next/image';
+import Navbar from '../components/Navbar';
+import Hero from '@/components/Hero';
+import About from '@/components/About';
+import { Inter } from 'next/font/google';
+import Head from 'next/head';
+import Calendar from '@/components/Calendar';
+import Team from '@/components/Team';
+import Faq from '@/components/Faq';
+import Footer from '@/components/Footer';
+import FeatureCardCollection from '@/components/FeatureCardCollection';
 
-const inter = Inter({ subsets: ["latin"] });
+const features = [
+	{
+		title: 'Long-Lasting',
+		description:
+			'EnduraScribe dry erase markers can write up to 1.5X of traditional dry erase markers which means you get more writing for your money. Tested on a Pen-Core Circle Writing Tester, our markers last 50% longer than leading brands.',
+		image: '/stationery.png',
+	},
+	{
+		title: 'Reliable',
+		description: 'Our liquid ink dries quickly and erases easily from most non-porous surfaces and glass. It is also low odor and emits no unpleasant smells like other markers.',
+		image: '/stationery.png',
+	},
+	{
+		title: 'Visible Ink Gague',
+		description: 'We incorporate a transparent barrel with a printed gauge so you always know how much ink is left in your dry erase marker. No more guessing or running out of ink unexpectedly!',
+		image: '/stationery.png',
+	},
+];
 
 export default function Home() {
-  return (
-    <main>
-      <Head>
-        <title>Canyon Crest Academy DECA</title>
-        <meta
-          name="description"
-          content="Join DECA to explore the realms of marketing, finance, hospitality, and management while developing leadership and entrepreneurial skills."
-          key="desc"
-        />
-        <meta
-          property="og:title"
-          content="CCA DECA: Empowering Emerging Leaders and Entrepreneurs"
-        />
-        <meta
-          property="og:description"
-          content="CCA DECA prepares the next generation of leaders and innovators, offering students unique opportunities to grow through competitions, conferences, and networking."
-        />
-        <meta
-          property="og:image"
-          content="/DECA-Diamond-1.png"
-        />
-      </Head>
+	return (
+		<main>
+			<Head>
+				<title>EnduraScribe</title>
+				<link rel='icon' href='/favicon.png' />
+			</Head>
 
-      <Navbar />
-      <Hero />
-      <About />
-      <Calendar />
-      <Team />
-      <Faq />
-      <Footer />
-    </main>
-  );
+			<Navbar />
+			<Hero />
+			<FeatureCardCollection features={features} />
+
+			{/* <About /> */}
+			{/* <Calendar /> */}
+			{/* <Team /> */}
+			{/* <Faq /> */}
+			<Footer />
+		</main>
+	);
 }

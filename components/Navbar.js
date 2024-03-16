@@ -38,13 +38,13 @@ export default function Example() {
                 <div className="flex flex-shrink-0 items-center">
                   <Image
                     className="h-8 w-auto"
-                    src="/DECA-Diamond-1.png"
+                    src="/favicon.png"
                     alt="Your Company"
                     width={500}
                     height={500}
                   />
                   <span className="text-blue-500 font-semibold rounded-md px-3 py-2 text-base">
-                    CCA DECA
+                    EnduraScribe
                   </span>
                 </div>
                 <div className="hidden sm:ml-6 sm:block">
